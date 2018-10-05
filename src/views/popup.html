@@ -6,7 +6,7 @@
   <body>
     <div class="container">
       <div class="header">
-        <div class="title"><span>Chrome Extension Boilerplate</span></div>
+        <div class="title"><span>WarnerProd</span></div>
         <div class="options">
           <div role="button" title="Menu" class="open-options jfk-button-flat">
             <div class="img-settings button-right"></div>
@@ -14,13 +14,21 @@
           <div class="menu-options">
             <ul>
               <li class="open-settings">Open settings</li>
-              <li class="fullscreen">Show in separate tab</li>
-              <li class="need-help">Need Help?</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="detail-container"></div>
+      <div class="detail-container">
+        <div class="title"><span>Domain list</span></div>
+        <button type="submit" id="submit-current">Add current domain</button>
+        <div>
+          <input type="text" id="new-domain" placeholder="Domain or pattern"/>
+          <button type="submit" id="submit-domain">Add</button>
+        </div>
+        <div id="domain-list">
+
+        </div>
+      </div>
     </div>
   </body>
 </html>

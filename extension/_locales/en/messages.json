@@ -1,10 +1,10 @@
 {
   "extName": {
-    "message": "Chrome Extension Boilerplate",
-    "description": "Extension name"
+    "message": "Production warner",
+    "description": "WarnerProd"
   },
   "extDesc": {
-    "message": "A template for building extensions for Chrome.",
-    "description": "Extension description"
+    "message": "An extension that display a message on the production pages",
+    "description": "An extension that display a message on the production pages"
   }
 }

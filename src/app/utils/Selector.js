@@ -19,16 +19,16 @@ export class Selector {
   constructor (selector, type) {
     // Check selector is Document or Window
     if (typeof selector === 'object') {
-      this.element = selector
+      this.element = selector;
       return
     }
 
     // Define default type as 'querySelector.
-    let selectorType = type || 'querySelector'
+    let selectorType = type || 'querySelector';
 
     // Check if is an ID.
     if (selector.indexOf('#') === 0) {
-      selectorType = 'getElementById'
+      selectorType = 'getElementById';
       selector = selector.substr(1, selector.length)
     }
 
@@ -41,9 +41,7 @@ export class Selector {
    * @returns {Boolean}
    */
   validElement () {
-    if (this.element === null) return false
-
-    return true
+    return this.element !== null;
   }
 
   /**
@@ -136,15 +134,47 @@ export class Selector {
    */
   text (value) {
     if (typeof value !== 'undefined') {
-      this.element.textContent = value
+      this.element.textContent = value;
 
       return value
     }
 
     return this.element.textContent
   }
+
+   /**
+    * Set or Get innerHTML
+    *
+    * @param {string} value
+    * @returns {string}
+    */
+  html (value) {
+     if (typeof value !== 'undefined') {
+         this.element.innerHTML = value;
+
+         return value
+     }
+
+     return this.element.innerHTML;
+  }
+
+     /**
+      * Appends a child
+      * @param {HTMLElement} child
+      */
+  append (child) {
+    if (typeof child !== 'undefined') {
+        this.element.appendChild(child);
+    }
+  }
+
+  prepend (child) {
+    if (typeof child !== 'undefined') {
+        this.element.prepend(child);
+    }
+  }
 }
 
 export const selector = (selector) => {
   return new Selector(selector)
-}
+};

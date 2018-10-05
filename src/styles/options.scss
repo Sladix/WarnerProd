@@ -5,6 +5,10 @@
   display: block;
   margin: 20px 0;
 }
+#injection {
+  width: 100%;
+  resize: vertical;
+}
 .field:after {
   content: '';
   display: table;

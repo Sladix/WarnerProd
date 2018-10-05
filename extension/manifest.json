@@ -8,7 +8,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://example.com/*"],
+      "matches": ["<all_urls>"],
       "js": [
         "dist/main.js"
       ],
@@ -33,9 +33,7 @@
 
   "permissions": [
     "activeTab",
-    "storage",
-    "http://*/*",
-    "https://*/*"
+    "storage"
   ],
 
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self';"
