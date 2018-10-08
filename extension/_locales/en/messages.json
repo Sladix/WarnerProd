@@ -4,7 +4,7 @@
     "description": "WarnerProd"
   },
   "extDesc": {
-    "message": "An extension that display a message on the production pages",
-    "description": "An extension that display a message on the production pages"
+    "message": "An extension that displays a custom html/css message on production pages",
+    "description": "An extension that displays a custom html/css message on production pages"
   }
 }
